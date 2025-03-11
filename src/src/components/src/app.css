@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  /* Dark Theme Styles */
+  body.dark-theme {
+    background-color: #222;
+    color: white;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .theme-toggle:hover {
+    background: #005bb5;
+  }
+  

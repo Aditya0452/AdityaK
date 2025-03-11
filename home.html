@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya K - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <header class="sticky-header">
+        <img src="profile.jpg" alt="Aditya K" class="profile-pic">
+        <div class="name-title">
+            <h1>Aditya K</h1>
+            <p>Full Stack Developer | Electronics Engineer</p>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+    </header>
+
+<div class="content">
+
+    <div id="career">
+        <h2>Career</h2>
+        <p>Looking for opportunities to incorporate my skills to help the company grow.
+            I am looking forward to roles that will help me realize my potential by exploring the 
+            various aspects of the field.</p>
+    </div>
+
+    <div id="professional">
+        <h2>Professional</h2>
+        <p>Motivated and enthusiastic graduate with strong in IT recruitment and Software Development.
+             Dedicated and Results oriented,<b>Software Developer</b> in software development.Proven track record in Web and Android Applications using JAVA and UI UX designing.
+             Seeking to leverage expertise in software development of AI.</p>
+    </div>
+
+    <div id="core-competencies">
+        <h2>Core Competencies</h2>
+
+        <!-- Professional Section -->
+        <table>
+        <tr>
+            <td class="category">• MS Office</td>
+            <td>@ Word, Excel/Spreadsheet (AI), PowerPoint</td>
+        </tr>
+        <tr>
+            <td class="category">• Web Development</td>
+            <td>@ HTML, CSS, JavaScript, React JS, Angular, MySQL,Firebase</td>
+        </tr>
+        <tr>
+            <td class="category">• Android Development</td>
+            <td>@ XML, Java, Firebase, API Integration</td>
+        </tr>
+        <tr>
+            <td class="category">• UI/UX Design</td>
+            <td>@ Figma, Adobe Illustrator, Canva, Photoshop</td>
+        </tr>
+        <tr>
+            <td class="category">• CAD 3D Design</td>
+            <td>@ SketchUp, AutoCAD</td>
+        </tr>
+        </table>
+    </div>
+
+    <div id="education">
+        <h2>Education</h2>
+        <p>B.Tech in ECE - Graduated in 2024.</p>
+    </div>
+
+    <div id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="box">
+                <h3>Autonomous Surveillance Robot</h3>
+                <p>Developed an Autonoumous robot incorporating IoT and AI Technologies 
+                    for enhanced security over Domestic and Miliatary Services</p>
+                <ul>
+                    <li>AI Integration</li>
+                    <li>Python,C</li>
+                    <li>Web Server for Online View</li>
+                    <li>Raspberry Pi 4</li>
+                    <li>Auto Human Detection of <br> Known and Unkown</li>
+                    <li>UnUsual Sound Detection </li>
+                    <li>Auto message Sender</li> 
+                    <li>Autonomous and Manual mode</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Vijaya RO</h3>
+                <p>An android Application Developed for realtime working App that achieving weekly, Monthly and 
+                    occasional Recharged Plan based water Ordering system</p>
+                    <ul>
+                        <li>JAVA</li>
+                        <li>API integration</li>
+                        <li>Firebase</li>
+                        <li>Cloud FireStore</li>
+                        <li>UPI integration</li>
+                    </ul>
+            </div>
+            <div class="box">
+                <h3>Other Android Apps</h3>
+                <ul>
+                    <li>Note Making</li>
+                    <li>Game Companion</li>
+                    <li>E-Commerce</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<!-- PDF Viewer Section -->+
+<section id="pdf-viewer-section">
+    <h2>Resume</h2>
+    
+    <!-- PDF Container -->
+    <div class="pdf-container" id="pdf-container">
+        <!-- <canvas id="pdf-canvas"></canvas> -->
+        <!-- <embed src="https://drive.google.com/file/d/1YeuHoQv50D8jqkeBQ0Ps08HJmWshGFvd/view?usp=drivesdk" type="application/pdf">   -->
+        
+            <iframe id="pdf-frame" src="https://drive.google.com/file/d/1YeuHoQv50D8jqkeBQ0Ps08HJmWshGFvd/preview" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Download Button -->
+    <div class="pdf-controls">
+        <a id="download-pdf" href="documents/AdityaK Software Developer.pdf" download>📥 Download PDF</a>
+    </div>
+</section>
+
+<!-- Include PDF.js Library -->
+<script src="pdf-viewer/pdf.js"></script>
+<script src="script.js"></script>
+
+    <div id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:kudipudiaditya@gmail.com" class="clickable">kudipudiaditya@gmail.com</a></p>
+        <p><a href="tel:+917993923665" class="clickable">7993923666</a></p>
+        <div class="social-icons">
+        <p><a href="https://www.linkedin.com/in/aditya02k" target="_parent" class="clickable">
+            <img src="images/linkedin.png" alt="linkedin" class="icon"></a></p>
+        <p><a href="https://github.com/Aditya0452" target="_parent" class="clickable">
+            <img src="images/github.png" alt="GitHub" class="icon">
+        </a></p>
+        <p><a href="https://instagram.com/_k_aditya_" target="_parent" class="clickable">
+            <img src="images/instagram.png" alt="instagram" class="icon">
+        </a></p>
+        <p><a href="https://wa.me/917993923665" target="_parent" class="clickable">
+            <img src="images/whatsapp.png" alt="whatsapp" class="icon">
+        </a></p></div>
+    </div>
+
+</div>
+
+    <footer>
+        <p>© 2025 Aditya K | Portfolio</p>
+    </footer>
+
+   <!-- Include PDF.js Library -->
+<script src="pdf-viewer/pdf.js"></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+
+</body>
+</html>
