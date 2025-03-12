@@ -303,8 +303,8 @@ body.dark-theme footer {
     }
 
     .box {
-        max-width: 740px;
-        min-width: 410px;
+        max-width: 440px;
+        width: 400px;
     }
 
     .social-icons {
@@ -312,13 +312,13 @@ body.dark-theme footer {
     }
 
     .social-icons .icon {
-        width: 32px;
-        height: 32px;
+        width: 38px;
+        height: 38px;
     }
 
     /* PDF Viewer Full Width */
     .pdf-container {
-        max-width: 735px;
+        max-width:100%;
         height: 500px; /* Adjust height */
     }
 
