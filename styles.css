@@ -303,7 +303,8 @@ body.dark-theme footer {
     }
 
     .box {
-        max-width: 100%;
+        max-width: 740px;
+        min-width: 410px;
     }
 
     .social-icons {
@@ -311,13 +312,13 @@ body.dark-theme footer {
     }
 
     .social-icons .icon {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 
     /* PDF Viewer Full Width */
     .pdf-container {
-        max-width: 100%;
+        max-width: 735px;
         height: 500px; /* Adjust height */
     }
 
@@ -347,7 +348,7 @@ body.dark-theme footer {
     }
 
     .box {
-        max-width: 45%; /* Two columns */
+        max-width:1000px; /* Two columns */
     }
 
     .social-icons {
