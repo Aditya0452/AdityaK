@@ -303,8 +303,8 @@ body.dark-theme footer {
     }
 
     .box {
-        max-width: 440px;
-        width: 400px;
+        max-width: 420px;
+        width: 380px;
     }
 
     .social-icons {
@@ -348,7 +348,8 @@ body.dark-theme footer {
     }
 
     .box {
-        max-width:1000px; /* Two columns */
+        max-width:850px; /* Two columns */
+        width: 700px;
     }
 
     .social-icons {
