@@ -61,7 +61,77 @@ body.dark-theme .sticky-header {
     background-position: center center;
     object-fit: cover;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: scale(1.35);
+}
+
+/* Fullscreen Popup Background */
+.profile-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+    
+}
+
+/* Blurred Background Effect */
+.blur-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* Enlarged Profile Image */
+.popup-image {
+    width: 90%; /* Full screen width */
+    height: auto;
+    max-height:90%; /* Full screen height */
+    height: auto;
+    clip-path: circle();
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    transition: transform 0.5s ease;
+    background-position: center center;
+    object-fit: cover;
+    overflow: hidden;
+    padding: auto;
+}
+
+/* ✅ Laptops & Larger Screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+    .popup-image {
+        width: 60vw;
+        height: auto;
+        max-height: 85vh;
+    }
+}
+
+/* Show Popup */
+.profile-popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Dark Mode Support */
+body.dark-theme .profile-popup {
+    background: rgba(20, 20, 20, 0.9);
+}
+
+
 
 .name-title h1 {
     margin: 0;
@@ -300,11 +370,13 @@ body.dark-theme footer {
     .project-container {
         flex-direction: column; /* Stack projects in one column */
         align-items: center;
+        justify-content: space-around;
     }
 
     .box {
         max-width: 400px;
-        width: 285px;
+        width: 280px;
+        
     }
 
     .social-icons {
@@ -320,6 +392,7 @@ body.dark-theme footer {
     .pdf-container {
         max-width:100%;
         height: 500px; /* Adjust height */
+        justify-content: space-around;
     }
 
     #pdf-frame {

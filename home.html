@@ -9,7 +9,7 @@
 <body>
    
     <header class="sticky-header">
-        <img src="profile.jpg" alt="Aditya K" class="profile-pic">
+        <img src="profile.jpg" alt="Aditya K" class="profile-pic" onclick="openFullImage()">
         <div class="name-title">
             <h1>Aditya K</h1>
             <p>Full Stack Developer | Electronics Engineer</p>
@@ -18,6 +18,10 @@
     </header>
 
 <div class="content">
+    <!-- Full-Screen Profile Popup -->
+<div id="profile-popup" class="profile-popup" onclick="closeFullImage()">
+    <img src="profile.jpg" alt="Profile" class="popup-image">
+</div>
 
     <div id="career">
         <h2>Career</h2>

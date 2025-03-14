@@ -29,3 +29,11 @@ hammer.on('pinch', (event) => {
 hammer.on('pinchend', () => {
     hammer.get('pinch').set({ enable: true });
 });
+
+function openFullImage() {
+    document.getElementById("profile-popup").classList.add("active");
+}
+
+function closeFullImage() {
+    document.getElementById("profile-popup").classList.remove("active");
+}
