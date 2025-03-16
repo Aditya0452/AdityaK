@@ -37,3 +37,11 @@ function openFullImage() {
 function closeFullImage() {
     document.getElementById("profile-popup").classList.remove("active");
 }
+
+async function updateVisitorCount() {
+    const response = await fetch("https://your-backend-url/update-visit");
+    const data = await response.json();
+    document.getElementById("visitorCount").innerText = data.count;
+  }
+
+  updateVisitorCount();
