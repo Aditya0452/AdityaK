@@ -39,7 +39,7 @@ function closeFullImage() {
 }
 
 async function updateVisitorCount() {
-    const response = await fetch("https://your-backend-url/update-visit");
+    const response = await fetch("https://adityak-tzzt.onrender.com/update-visit");
     const data = await response.json();
     document.getElementById("visitorCount").innerText = data.count;
   }
