@@ -38,10 +38,15 @@ function closeFullImage() {
     document.getElementById("profile-popup").classList.remove("active");
 }
 
-async function updateVisitorCount() {
-    const response = await fetch("https://adityak-tzzt.onrender.com/update-visit");
-    const data = await response.json();
-    document.getElementById("visitorCount").innerText = data.count;
-  }
 
-  updateVisitorCount();
+document.addEventListener("DOMContentLoaded", () => {
+    const backendURL = "mongodb+srv://kudipudiaditya2002:aditya2002@aditya.fagxw.mongodb.net/?retryWrites=true&w=majority&appName=Aditya"; // Replace with your actual backend URL
+
+    // Update visitor count
+    fetch(`${backendURL}/update-visit`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("views").textContent = data.count;
+        })
+        .catch(error => console.error("Error updating views:", error));
+});
