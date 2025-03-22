@@ -197,7 +197,12 @@ td {
     border-radius: 6px;
     margin:0.8%;
     background: white;
-    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;  
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px; 
+}
+body.dark-theme .logo{
+    background: #303030;
+    color: white;
+    box-shadow: #323c443d 0px 1px 2px 0px, #32353826 0px 2px 6px 2px; 
 }
 
 /* Style for First Column (Categories) */
