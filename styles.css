@@ -76,7 +76,8 @@ body.dark-theme .sticky-header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    /* background: #44435a86; Dark overlay */
+    background-image: linear-gradient( 90.8deg,  #2c596418 14.5%, #a8e1ffe5 135.4% );
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +85,8 @@ body.dark-theme .sticky-header {
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s;
-    
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(3px);
 }
 
 /* Blurred Background Effect */
@@ -92,8 +94,6 @@ body.dark-theme .sticky-header {
     position: absolute;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
 }
 
 /* Enlarged Profile Image */
@@ -182,6 +182,20 @@ table {
 td {
     padding: 12px;
     font-size: 16px;
+}
+
+.logo-box{
+    display: flex;
+    flex-wrap:wrap;
+}
+.logo{
+    width:40px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 6px;
+    margin:0.8%;
+    background: white;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;  
 }
 
 /* Style for First Column (Categories) */

@@ -36,7 +36,7 @@ function openFullImage() {
 
 function closeFullImage() {
     document.getElementById("profile-popup").classList.remove("active");
-}
+}   
 
 
 document.addEventListener("DOMContentLoaded", () => {
